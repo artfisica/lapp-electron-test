@@ -1,19 +1,154 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+<head>
+	<meta name="generator" content="Hugo 0.81.0" />
+    <title>LA-CoNGA Suite</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/slate.css">
+</head>
+<header>
+  <CENTER>
+    <img style="padding:20px 0px 5px 0px" src="http://laconga.redclara.net/wp-content/uploads/2020/06/logo_LAconga-oficial-01-1.png" alt="laconga logo">
+    <h1 style="color:white; font-size:60px">LA-CoNGA Suite</h1>
+  </CENTER>
+</header>
+<body>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<div class="nav-panel">
+    <nav>
+        <ul>
+            <li class="tag"><a data-tooltip="all" href="#"><i class="icon fa fa-th" aria-hidden="true"></i></a></li>
+            <li class="tag"><a data-tooltip="favorites" href="#favorite"><i class="icon fa fa-star" aria-hidden="true"></i></a></li>
+            <li class="tag"><a data-tooltip="search" href="#search"><i class="icon fa fa-search" aria-hidden="true"></i></a></li>
+            <li class="tag"><a data-tooltip="app" href="#app"><i class="icon fa fa-users" aria-hidden="true"></i></a></li>
+            <li class="tag"><a data-tooltip="communication" href="#communication"><i class="icon fa fa-headphones" aria-hidden="true"></i></a></li>
+            <li class="tag"><a data-tooltip="video" href="#video"><i class="icon fa fa-video-camera" aria-hidden="true"></i></a></li>
+
+        </ul>
+    </nav>
+</div>
+
+
+<div class="container"><div class="tile-container">
+<a class="tile tile-link" href="http://laconga.redclara.net" data-groups='search' target="_blank">
+    <div class="tile-box"
+        data-title='LA-CoNGA web'
+        data-url='http://laconga.redclara.net'
+        data-bg-color='#1da1f2'data-txt-color='#f5f8fa'data-img='logos/laconga.png'style='background-color:#1da1f2; color:#f5f8fa'>
+        <img class="logo" src="logos/laconga.png"></img></div>
+    <div class="tile-title">LA-CoNGA web</div>
+</a>
+
+<a class="tile tile-link" href="https://laconga.redclara.net/courses/" data-groups='favorite,search' target="_blank">
+    <div class="tile-box"
+        data-title='Cursos / Courses'
+        data-url='https://laconga.redclara.net/courses/'
+        data-img='logos/mkdocs.png'>
+        <img class="logo" src="logos/mkdocs.png"></img></div>
+    <div class="tile-title">Cursos / Courses</div>
+</a>
+
+<a class="tile tile-link" href="https://jupyter.redclara.net/" data-groups='favorite,app' target="_blank">
+    <div class="tile-box"
+        data-title='Jupyter Hub'
+        data-url='https://jupyter.redclara.net/'
+        data-bg-color='#ffffff'data-txt-color='#000000'data-img='logos/jupyter.png'style='background-color:#ffffff; color:#000000'>
+        <img class="logo" src="logos/jupyter.png"></img></div>
+    <div class="tile-title">Jupyter Hub</div>
+</a>
+
+<a class="tile tile-link" href="https://gitmilab.redclara.net/" data-groups='favorite,search' target="_blank">
+    <div class="tile-box"
+        data-title='GitLab'
+        data-url='https://gitmilab.redclara.net/'
+        data-img='logos/gitlab.png'>
+        <img class="logo" src="logos/gitlab.png"></img></div>
+    <div class="tile-title">GitLab</div>
+</a>
+
+<a class="tile tile-link" href="https://github.com/LA-CoNGA/" data-groups='search' target="_blank">
+    <div class="tile-box"
+        data-title='GitHub'
+        data-url='https://github.com/LA-CoNGA/'
+        data-img='logos/github.png'>
+        <img class="logo" src="logos/github.png"></img></div>
+    <div class="tile-title">GitHub</div>
+</a>
+
+<a class="tile tile-link" href="https://mattermost.redclara.net/" data-groups='favorite,communication' target="_blank">
+    <div class="tile-box"
+        data-title='Mattermost'
+        data-url='https://mattermost.redclara.net/'
+        data-bg-color='#f1f1f1'data-txt-color='#6441a5'data-img='logos/mattermost.svg'style='background-color:#f1f1f1; color:#6441a5'>
+        <img class="logo" src="logos/mattermost.svg"></img></div>
+    <div class="tile-title">Mattermost</div>
+</a>
+
+<a class="tile tile-link" href="https://zenodo.org/communities/la-conga/" data-groups='search' target="_blank">
+    <div class="tile-box"
+        data-title='Zenodo'
+        data-url='https://zenodo.org/communities/la-conga/'
+        data-bg-color='#ffffff'data-txt-color='#000000'data-img='logos/zenodo.png'style='background-color:#ffffff; color:#000000'>
+        <img class="logo" src="logos/zenodo.png"></img></div>
+    <div class="tile-title">Zenodo</div>
+</a>
+
+<a class="tile tile-link" href="https://classroom.google.com/c/MTQxOTMzNDA0NzUw" data-groups='favorite' target="_blank">
+    <div class="tile-box"
+        data-title='Rendimiento'
+        data-url='https://classroom.google.com/c/MTQxOTMzNDA0NzUw'
+        data-img='logos/calificaciones.png'>
+        <img class="logo" src="logos/calificaciones.png"></img></div>
+    <div class="tile-title">Rendimiento</div>
+</a>
+
+<a class="tile tile-link" href="./" data-groups='app' target="_blank">
+    <div class="tile-box"
+        data-title='OwnCloud'
+        data-url='./'
+        data-bg-color='#ffffff'data-txt-color='#e50914'data-img='logos/owncloud.png'style='background-color:#ffffff; color:#e50914'>
+        <img class="logo" src="logos/owncloud.png"></img></div>
+    <div class="tile-title">OwnCloud</div>
+</a>
+
+<a class="tile tile-link" href="https://meet.jit.si" data-groups='video,communication' target="_blank">
+    <div class="tile-box"
+        data-title='Jitsi'
+        data-url='https://meet.jit.si'
+        data-img='logos/jitsi.png'>
+        <img class="logo" src="logos/jitsi.png"></img></div>
+    <div class="tile-title">Jitsi</div>
+</a>
+
+<a class="tile tile-link" href="https://www.youtube.com/channel/UCcXSolYkpCW_iYxHrnSJw0w" data-groups='video' target="_blank">
+    <div class="tile-box"
+        data-title='YouTube'
+        data-url='https://www.youtube.com/channel/UCcXSolYkpCW_iYxHrnSJw0w'
+        data-bg-color='#ffffff'data-txt-color='#cd201f'data-img='logos/youtube.svg'style='background-color:#ffffff; color:#cd201f'>
+        <img class="logo" src="logos/youtube.svg"></img></div>
+    <div class="tile-title">YouTube</div>
+</a>
+
+<a class="tile tile-link" href="https://google.com" data-groups='search' target="_blank">
+    <div class="tile-box"
+        data-title='Google'
+        data-url='https://google.com'
+        data-bg-color='#ffffff'data-txt-color='#cd201f'data-img='logos/google.svg'style='background-color:#ffffff; color:#cd201f'>
+        <img class="logo" src="logos/google.svg"></img></div>
+    <div class="tile-title">Google</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+<script src="js/slate.js"></script>
+
+<footer style="background-color: #ffffff;">
+  <CENTER>
+
+    <img style="padding:60px 0px 20px 0px" src="./logos/cabecera-web-1-2.png" alt="laconga logos">
+  </CENTER>
+</footer>
 </html>
